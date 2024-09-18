@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // function func(){
+        //     this.a=20;
+
+        // }
+        // let res=new func();
+        // let x=res.a;
+        // document.write(x);
+
+        // let func1=function(){
+        //     this.str="hello";
+        //     this.num=20;
+        //     this.bool=true;
+        // }
+        // let obj=new func1();
+        // let a=obj.str;
+
+        // let b=obj["num"];
+        // document.write(b)
+        // let {str,num,bool}=obj;
+        // document.write(str,num,bool)
+        // for(let x in obj){
+        //     document.write(obj[x])
+        // }
+
+    //     let func=function (){
+    //         this.func1=()=>{
+    //             return 100;
+    //         }
+    //         this.func2=()=>{
+    //         document.write(500);
+    //     };
+    //     }
+       
+    //     this.a=20;
+
+    //     let obj=new func;
+    //    let res= obj.func1()
+    //    document.write(res)
+    //    let x=obj.a;
+    //    document.write(a);
+    //    obj.func2()
+
+    // let class1=function(){
+
+    // }
+    // class1.prototype.x=100;
+    // class1.prototype.func=()=>{
+    //     document.write(200)
+    // }
+
+    // let class2=function(){
+
+    // }
+    // class2.prototype=Object.create(class1.prototype);
+    // class2.prototype.y=300;
+    // class2.prototype.func2=()=>{
+    //     document.write(400);
+    // }
+    // let obj=new class2();
+    // let {x,y}=obj;
+    // document.write(x,y);
+    // obj.func();
+    // obj.func2();
+
+    /////iife
+
+    // (function(){
+    //     document.write(500)
+    // })()
+        
+//    let res= (()=>{
+//         return [10,20,30];
+//     })()
+//     for (let i=0;i<=res.length-1;i++){
+//         document.write(res[i])
+//     }
+
+// function* func(){
+//     yield 100;
+//     yield 200;
+//     return 300;
+//     yield 400;
+
+
+// }
+// let res=func();
+// console.log(res.next());
+// console.log(res.next());
+// console.log(res.next());
+// console.log(res.next());
+
+// let func=function* (){
+//     yield 100;
+//     yield "teja";
+//     yield *func4();
+//     yield 300;
+// }
+
+// let func4=function*(){
+//     yield 200;
+//     return "teja";
+// }
+// let res=func();
+// console.log(res.next());
+// console.log(res.next());
+// console.log(res.next());
+
+// console.log(res.next());
+// console.log(res.next());
+
+
+let func=(p1)=>{
+    return ()=>{
+       let r= p1();
+       document.write(r)
+    }
+
+}
+let res=func(()=>{
+    return 500;
+})
+let x=res();
+
+
+    </script>
+</body>
+</html>

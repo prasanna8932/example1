@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">product name</label>
+        <input type="text" name="product_name" id="f3"><br>
+        <label for="">product Cost</label>
+        <input type="number" id="f1" placeholder="enter cost"><br>
+        <label for="">quantity</label> 
+        <input type="number" id="f2" placeholder="enter quantity"><br>
+        <button onclick="calculate()" type="button">calculate</button>
+        <p >finalcost:<span id="p1"></span></p>
+    </form>
+    <script>
+        function calculate() {
+            let x=parseFloat(document.getElementById("f2").value)
+            let y=parseFloat(document.getElementById("f1").value)
+            let d=document.getElementById("p1").innerHTML=x*y;
+        }
+    </script>
+</body>
+</html>

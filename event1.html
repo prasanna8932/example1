@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <label for="">a</label>
+    <input type="number" id="f1" placeholder="enter number" ><br>
+    <label for="">b</label>
+    <input type="number" id="f2" placeholder="enter number" ><br>
+    <button type="button" onclick="swap()">swap</button> <br>
+    <label for="">a</label>
+    <input type="number" id="f3"  ><br>
+    <label for="">b</label>
+    <input type="number" id="f4" ><br>
+</form>
+<script>
+
+    const swap=()=>{
+        let x=parseInt(document.getElementById("f1").value);
+        let y=parseInt(document.getElementById("f2").value);
+        let z=document.getElementById("f3").value=y;
+        let w=document.getElementById("f4").value=x;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Loan Amount</label>
+        <input type="number" id="f1" placeholder="enter amount"><br>
+        <label for="">Intrest Amount</label>
+        <input type="number" id="f2" placeholder="enter intrest rate"><br>
+        <label for="">Time period</label>
+        <input type="number" id="f3" placeholder="enter months"><br>
+        <label for="">intrest amont</label>
+        <input type="number" id="f4"><br>
+        <label for="">final amount</label>
+        <input type="number" id="f5" ><br>
+        <button type="button" onclick="intrest()" >intrest amount</button>
+        <button type="button" onclick="final()">final amount</button>
+    </form>
+    <script>
+        function intrest(){
+            let x=parseFloat(document.getElementById("f1").value);
+            let y=parseFloat(document.getElementById("f2").value);
+            let z=parseFloat(document.getElementById("f3").value);
+            let s=y/100;
+            let a=x*s*z;
+            let c=document.getElementById("f4").value=a;
+        }
+        function final(){
+            let x=parseFloat(document.getElementById("f1").value);
+            let y=parseFloat(document.getElementById("f2").value);
+            let z=parseFloat(document.getElementById("f3").value);
+            let s=y/100;
+            let a=(x*s*z)+x;
+            let c=document.getElementById("f5").value=a;
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let func=function(num,callback){
+            callback(num+5)
+
+        }
+        let func1=(num,callback)=>{
+            callback(num-3)
+
+        }
+        let func2=(num,callback)=>{
+            callback(num*2)
+
+        }
+        func(5,(addres)=>{
+            func1(addres,(subres)=>{
+                func2(subres,(mulres)=>{
+                    document.write(mulres)
+                })
+
+            })
+        })
+        
+
+            
+    
+    
+       
+    </script>
+</body>
+</html>
